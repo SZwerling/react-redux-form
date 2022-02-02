@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 
 
 
-const textReducer = (text=[{front: 1, back: 2}], action) => {
+const textReducer = (text=[], action) => {
     if(action.type === 'NEW_TEXT'){
         const obj = action.payload
         return text.concat(obj)

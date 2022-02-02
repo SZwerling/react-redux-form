@@ -13,7 +13,7 @@ class Input extends React.Component {
 
    
     handleSubmit(values){
-        this.props.oneInput(values.front, values.back)
+        // this.props.oneInput(values)
         console.log(values)
     }
 
@@ -53,7 +53,7 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = ({
-    oneInput: (front, back) => (oneInput(front, back))  
+    oneInput: (val) => (oneInput(val))  
 });
 
 

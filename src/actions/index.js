@@ -1,9 +1,6 @@
-export const oneInput = (front, back) => ({
+export const oneInput = (valuesObj) => ({
         type: 'NEW_TEXT',
-        payload: {
-            front: front,
-            back: back
-        },
+        payload: valuesObj
 });
 
 
